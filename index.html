@@ -1,67 +1,64 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <title> personal Portfolio </title>
-</head>
-<body>
-        
-    <header>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <title> personal Portfolio </title>
+    </head>
+    <body>
         <header class="page-header">
-        <!-- Logo goes here-->
-        <img src="img/Victor Pena Logo.png" alt="logo" class="page-header__item">
-        <nav class="page-header__item">
+             <!-- Logo goes here-->
+            <img src="img/VictorPenaLogo.png" alt="logo" class="page-header__item">
+            <nav class="page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="Home">Home</a>
                 </li>
                 <li role="presentation">
-                   <a href="about.html" role="menuitem" class="navigation-list__item" aria-label="About Me">About</a>
+                   <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="About Me">About</a>
                 </li>
                <li role="presentation">
-                   <a href="contact.html" role="menuitem" class="navigation-list__item" aria-label="Contact Me">Contact</a>
+                   <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="Contact Me">Contact</a>
                 </li>
                 <li role="presentation">
                     <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="My Work">Work</a>
                  </li>
-             </ul>
-        </nav>
-    </header>
-    <main>
-        <!--My picture goes here-->
-    <div class="profile">
-    <img src="img/pictureofme.jpg" class="profile__portrait" alt="A picture of me">
-    <h1>Hello World! </h1>
-    <p>My name is Victor Pena. I am a web developer from Puerto Rico</p>
-    <a href="#">Check some of my code</a>
-    <button type="button">Default Button</button>
-    <button class="button__secondary">Secondary Button</button>
-    </div>
-    </main>
-    <footer>
+                 </ul>
+            </nav>
+        </header>
+        <main>
+            <!--My picture goes here-->
+            <div class="profile">
+            <img src="img/pictureofme.jpg" class="profile__portrait" alt="A picture of me">
+            <h1>Hello World! </h1>
+            <p>My name is Victor Pena. I am a web developer from Puerto Rico.</p>
+            <a href="https://github.com/vicmpg/portfolio-website/tree/main">Check some of my code</a>
+            </div>
+        </main>
         <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-        <!-- Github logo-->
-        <img src="img/291716_github_logo_social network_social_icon.svg" alt="Github">
-        <!-- Twitter logo-->
-        <img src="img/291710_twitter_social media_tweet_bird_social_icon.svg" atl="Twitter">
-        <!-- LinkedIn logo-->
-        <img src="img/353425_linkedin_logo_icon.svg" alt="LinkedIn">
-        </div>
-
-        <script src="js/tota11y.min.js"></script>
-        <div id="tota11y-toolbar" class="tota11y tota11y-toolbar" role="region" aria-expanded="false">
-        <div class="tota11y-toolbar-body"></div> 
-        <button aria-controls="tota11y-toolbar" class="tota11y-toolbar-toggle" aria-label="[tota11y] Toggle menu"></button>
+            <p>Find me on</p>
+            <div class="social-media">
+            <!-- Github logo-->
+            <a href="https://github.com/vicmpg/portfolio-website" class="footer__link--hov" target="_blank">
+                <img src="img/291716_github_logo_social_network_social_icon.svg" alt="Github"></a>
+            <!-- Twitter logo-->
+            <a href="https://twitter.com/_victoriouspr" class="footer__link--hov" target="_blank">
+                <img src="img/291710_twitter_social_media_tweet_bird_social_icon.svg" alt="Twitter"></a>
+            <!-- LinkedIn logo-->
+            <a href="https://www.linkedin.com/in/victor-pena-884190237/" class="footer__link--hov" target="_blank">
+                <img src="img/353425_linkedin_logo_icon.svg" alt="LinkedIn"></a>
+            </div>
         </footer>
-
-    
-</body>
+            <script src="js/tota11y.min.js"></script>
+            <div id="tota11y-toolbar" class="tota11y tota11y-toolbar" role="region" aria-expanded="false">
+            <div class="tota11y-toolbar-body"></div> 
+            <button aria-controls="tota11y-toolbar" class="tota11y-toolbar-toggle" aria-label="[tota11y] Toggle menu"></button>
+         </div>
+    </body>
 </html>

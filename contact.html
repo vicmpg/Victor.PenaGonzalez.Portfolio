@@ -1,85 +1,84 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <title> Contact Victor Pena </title>
-</head>
-<body>
-    <header>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <title> Contact Victor Pena </title>
+    </head>
+    <body>
         <header class="page-header">
         <!-- Logo goes here-->
-        <img src="img/Victor Pena Logo.png" alt="logo" class="page-header__item">
+        <img src="img/VictorPenaLogo.png" alt="logo" class="page-header__item">
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
                 </li>
                 <li role="presentation">
-                   <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                   <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
                 </li>
                <li role="presentation">
-                   <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                   <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
                 </li>
                 <li role="presentation">
                     <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
                  </li>
              </ul>
         </nav>
-    </header>
-    <div>
-
-<main>
-    <div class="contact">
-        <h1>Contact</h1>
-        42 nortridge st
-        <br>
-        Patchogue NY, 11772
-        <br>
-        <br>
-        Telephone:
-        <a href="tel:939 325 1088">Tel: 939 325 1088</a>
-        <br>
-        Email:
-        <a href="mailto:vicmpg22@gmail.com" aria-label="Email Adress">vicmpg22@gmail.com</a>
-        <br>
-        <br>
-        <a href="#" class="button">Contact Me</a>
-    </div>
-        <form action="" method="post" id="contact-form">
-            <label class="standard-label" for="contact-email"> Email: </label>
-            <input type="email" id="contact-email" required>
+        </header>
+        <main>
+            <div class="contact">
+            <h1>Contact</h1>
+            42 nortridge st
+            <br>
+            Patchogue NY, 11772
+            <br>
+            <br>
+            Telephone:
+            <a href="tel:9393251088">Tel:(939)325-1088</a>
+            <br>
+            Email:
+            <a href="mailto:vicmpg22@gmail.com" aria-label="Email Adress">vicmpg22@gmail.com</a>
+            <br>
+            <a href="mailto:vicmpg22@gmail.com">Contact Me!</a>
+            </div>
+            <form action="#" method="post" id="contact-form">
+                <label class="standard-label form__elements" for="email">Email:</label>
+                <input type="email" id="email" class="form__elements" required>
           
-            <label class="standard-label"> Telephone:</label> 
-            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <label class="standard-label form__elements" for="telephone">Telephone:</label> 
+                <input type="tel" id="telephone" class="form__elements" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
           
-            <label class="standard-label">Message: </label>
-            <textarea maxlength="240 " required></textarea>
+                <label class="standard-label form__elements" for="message">Message: </label>
+                <textarea id="message" class="form__elements" maxlength="300" required></textarea>
           
-            <input type="submit" value="Send message">
-        </form>
-</main>
-        <div>
-            <footer class="page-footer">
-                <p>Find me on</p>
-                <div class="social-media">
-                <!-- Github logo-->
-                <img src="img/291716_github_logo_social network_social_icon.svg" alt="Github">
-                <!-- Twitter logo-->
-                <img src="img/291710_twitter_social media_tweet_bird_social_icon.svg" atl="Twitter">
-                <!-- LinkedIn logo-->
-                <img src="img/353425_linkedin_logo_icon.svg" alt="LinkedIn">
-                </div>
-        </div>  
-        <script src="js/tota11y.min.js"></script>
-        <div id="tota11y-toolbar" class="tota11y tota11y-toolbar" role="region" aria-expanded="false">
-        <div class="tota11y-toolbar-body"></div> 
-        <button aria-controls="tota11y-toolbar" class="tota11y-toolbar-toggle" aria-label="[tota11y] Toggle menu"></button>
-    </footer>
-</body>
+                <input type="submit" class="form__elements" value="Send message">
+            </form>
+        </main>
+        <footer class="page-footer">
+            <p>Find me on</p>
+            <div class="social-media">
+            <!-- Github logo-->
+            <a href="https://github.com/vicmpg/portfolio-website" class="footer__link--hov" target="_blank">
+                <img src="img/291716_github_logo_social_network_social_icon.svg" alt="Github"></a>
+            <!-- Twitter logo-->
+            <a href="https://twitter.com/_victoriouspr" class="footer__link--hov" target="_blank">
+                <img src="img/291710_twitter_social_media_tweet_bird_social_icon.svg" alt="Twitter"></a>
+            <!-- LinkedIn logo-->
+            <a href="https://www.linkedin.com/in/victor-pena-884190237/" class="footer__link--hov" target="_blank">
+                <img src="img/353425_linkedin_logo_icon.svg" alt="LinkedIn"></a>
+            </div>
+        </footer>
+            <script src="js/tota11y.min.js"></script>
+            <div id="tota11y-toolbar" class="tota11y tota11y-toolbar" role="region" aria-expanded="false">
+            <div class="tota11y-toolbar-body"></div> 
+            <button aria-controls="tota11y-toolbar" class="tota11y-toolbar-toggle" aria-label="[tota11y] Toggle menu"></button>
+         </div>
+    </body>
 </html>
