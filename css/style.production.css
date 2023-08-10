@@ -18,17 +18,20 @@
   --padding: 10px;
   --bodyMaxWidth: 700px;
   --borderSize: 1px;
+  --theme-spacing: 10px;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: var(--regularFont);
   font-size: var(--textFontSize);
   line-height: var(--lineHeightS);
 }
-  
+
 h1 {
   font-size: calc(var(--textFontSize) * 3);
   font-weight: var(--boldFont);
@@ -59,17 +62,18 @@ a:active {
   color: var(--linkActiveColor);
 }
 
-.button,
-button {
+button,
+.button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--primaryColor);
-  color: var(--lightTextColor);
+  background-color: #357b70;
+  color: #fff;
   text-decoration: none;
-  padding: var(--padding);
-  border-radius: calc(var(--borderSize) * 3);
-  border-bottom: calc(var(--borderSize) * 2) solid var(--borderColor);
+  padding: 10px;
+  border-radius: calc(1px * 3);
+  border-bottom: calc(1px * 2) solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
@@ -80,9 +84,24 @@ button:focus,
   cursor: pointer;
   opacity: 0.8;
 }
+
 table {
   width: 75%;
   margin: 20px auto;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form__elements {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.form__elements:nth-child(odd) {
+  margin-top: var(--theme-spacing);
 }
 
 .navigation-list__item--active {
@@ -159,6 +178,7 @@ table {
   display: inline-block;
   margin-left: 15px;
 }
+
 .grid__item {
   display: inline-block;
   width: 33%;
@@ -241,11 +261,12 @@ table {
     padding: calc(var(--padding) * 2);
     margin: 0;
   }
-    .grid__item:last-child {
-      grid-column-start: 3;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
+
+  .grid__item:last-child {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
 }
 
@@ -265,32 +286,25 @@ table {
   .grid {
     grid-template-columns: 1fr;
   }
-
-  .profile {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: calc(var(--textFontSize) * 1.5);
-  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
-
-  .profile {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: calc(var(--textFontSize) * 2);
-  }
 }
 
 @media all and (max-width: 750px) {
   .grid {
-    grid-gap: var(--padding);
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
   }
 }
