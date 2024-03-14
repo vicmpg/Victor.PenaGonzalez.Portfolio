@@ -8,57 +8,131 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
-        <title> Personal Portfolio </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title> Victor Pena Web Developer Portfolio </title>
     </head>
     <body>
-        <header class="page-header">
-             <!-- Logo goes here-->
-            <img src="img/VictorPenaLogo.png" alt="logo" class="page-header__item">
+
+    <!-- Page Header including the logo and the main navigation -->
+    <div class="header-container">
+        <header class="page-header" id="top"> 
+            <!--My logo-->
+            <img src="img/VictorPenaLogo.png" alt="Personal logo of Victor Pena" class="page-header__item" id="logo">
             <nav class="page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                   <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="Home">Home</a>
-                </li>
-                <li role="presentation">
-                   <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="About Me">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="My Work">Work</a>
-                </li>
-               <li role="presentation">
-                   <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="Contact Me">Contact</a>
-                </li>
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="#top" role="menuitem" class="navigation-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#about" role="menuitem" class="navigation-list__item">About me</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#work" role="menuitem" class="navigation-list__item">Work</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <!--My picture goes here-->
-            <div class="profile">
-            <img src="img/pictureofme.jpg" class="profile__portrait" alt="A picture of me">
-            <h1>Hello World! </h1>
-            <p>Hi, I’m Victor Pena, an entry level web developer, and a US military veteran passionate about technology. I am a detailed-oriented person who is always looking to get out of my comfort zone and learn new skills. From my previous work experiences, I was able to learn and excel in my communication skills and collaborating with others. I am currently a student looking for work experience to start my web development career. I am looking for opportunities to get into the workforce using my programming and development skills in any industry from business activities, manufacturing, entertainment, or information.</p>
-            <a href="https://github.com/vicmpg/portfolio-website/tree/main" target="blank">Check some of my code</a>
-            </div>
-        </main>
+    </div>
+<!-- Main content -->
+<main id="about">
+    <div class="profile">
+        <img src="img/profilepic.jpg" class="profile__portrait" alt="Victor Pena portrait">
+        <div class="profile__text">
+            <h1>Salutations!</h1>
+            <p>
+                My name is Victor Pena. I am a web developer from Puerto Rico.
+            </p>
+            <a href="work.html">Check out some of my code</a>
+        </div>
+    </div>
+</main>
+ <!-- Work -->
+ <section class="work" id="work">
+    <h1>Work</h1>
+    <div class="project-list">
+        <!-- Project items -->
+        <div class="project-list__item">
+            <h2>Meet App</h2>
+            <a href="https://vicmpg.github.io/meet/" target="_blank"><img src="img/MeetApp_.png"></a>
+            <p>
+                This is an app built using React on the frontend, and AWS Lambda on the backend. It displays a list of events, which is fetching the events from Google Calendar API, that can be filtered by city or number of events.
+            </p>
+            <a href="https://github.com/vicmpg/meet" target="_blank">See project on GitHub</a>
+         </div>
+         <div class="project-list__item">
+            <h2>Project 2</h2>
+            <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis ut quae laudantium hic esse unde!
+            </p>
+            <a href="#" target="_blank">See project on GitHub</a>
+         </div>
+         <div class="project-list__item">
+            <h2>Project 3</h2>
+            <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat doloremque eaque corporis illo numquam suscipit voluptas.
+            </p>
+            <a href="#" target="_blank">See project on GitHub</a>
+         </div>
+         <div class="project-list__item">
+            <h2>Project 4</h2>
+            <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eos necessitatibus illum deserunt, quod atque earum.
+            </p>
+            <a href="#" target="_blank">See project on GitHub</a>
+         </div>
+         <div class="project-list__item">
+            <h2>Project 5</h2>
+            <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error eos quo exercitationem accusantium, sapiente eum optio.
+            </p>
+            <a href="#" target="_blank">See project on GitHub</a>
+         </div>
+         <div class="project-list__item">
+            <h2>Project 6</h2>
+            <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem temporibus quis voluptatibus nesciunt ea recusandae autem.
+            </p>
+            <a href="#" target="_blank">See project on GitHub</a>
+         </div>
+    </div>
+</section>
+<!-- Contact Information -->
+<main id="contact">
+    <div class="contact">
+        <h1>Contact</h1>
+        <div class="contact__information">
+            Victor M. Pena<br>
+            Long Island<br>
+            New York<br>
+            <br>
+            Email <a href="mailto:vicmpg22@gmail.com">vicmpg22@gmail.com</a>
+        </div>
+        <div>
+            <a href="mailto:vicmpg22@gmail.com" class="button">Contact me</a>
+        </div>
+    </div>
+</main>
+    <!-- Footer with links to social media profiles -->
         <footer class="page-footer">
             <p>Find me on</p>
             <div class="social-media">
             <!-- Github logo-->
             <a href="https://github.com/vicmpg/portfolio-website" class="footer__link--hov" target="_blank">
                 <img src="img/291716_github_logo_social_network_social_icon.svg" alt="Github"></a>
-            <!-- Twitter logo-->
-            <a href="https://twitter.com/_victoriouspr" class="footer__link--hov" target="_blank">
-                <img src="img/291710_twitter_social_media_tweet_bird_social_icon.svg" alt="Twitter"></a>
             <!-- LinkedIn logo-->
             <a href="https://www.linkedin.com/in/victor-pena-884190237/" class="footer__link--hov" target="_blank">
                 <img src="img/353425_linkedin_logo_icon.svg" alt="LinkedIn"></a>
             </div>
+            <a href="#top">Back to top</a>
         </footer>
-            <script src="js/tota11y.min.js"></script>
-            <div id="tota11y-toolbar" class="tota11y tota11y-toolbar" role="region" aria-expanded="false">
-            <div class="tota11y-toolbar-body"></div> 
-            <button aria-controls="tota11y-toolbar" class="tota11y-toolbar-toggle" aria-label="[tota11y] Toggle menu"></button>
-         </div>
+    <script src="js/scripts.js"></script>
     </body>
 </html>
