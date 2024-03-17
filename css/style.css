@@ -158,10 +158,10 @@ button:active,
 
 /* Profile Index Page */
 #about {
-  height: 100vh;
+  height: 100%;
 }
 .profile {
-  max-width: 60%;
+  max-width: 80%;
   margin: 10vh auto;
   display: flex;
   background-color: rgba(168, 152, 152, 0.09);
@@ -171,14 +171,21 @@ button:active,
   padding: 25px;
 }
 .profile__portrait {
-  width: 400px;
+  width: 500px;
   margin-right: 50px;
   padding: 10px;
   border-radius: 15px;
+  object-fit: cover;
 }
 .profile__text h1 {
   font-size: 50px;
   color: var(--primary-color);
+}
+.profile .button {
+  margin-top: 15%;
+  margin-right: 5px;
+  float: right;
+}
 
 
 /* Work Page */
@@ -188,7 +195,7 @@ button:active,
 
 .work {
   max-width: 75%;
-  margin: 0 auto;
+  margin: 20vh auto;
 }
 .work h1 {
   text-align: center;
@@ -234,12 +241,19 @@ button:active,
 /* Contact Page */
 #contact {
   height: 100vh;
+  max-width: 80%;
+  margin: 10vh auto;
   display: flex;
+  background-color: rgba(168, 152, 152, 0.09);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 25px;
 }
 
 .contact {
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 80%;
   align-self: center;
 }
 
@@ -250,25 +264,6 @@ button:active,
 .contact__information {
   margin: 30px auto;
   display: inline-block;
-}
-
-#contact-form {
-  display: flex;
-  flex-direction: column;
-}
-.error-message {
-  color: red;
-}
-#contact-email,
-#contact-tel,
-#contact-message {
-  flex: 0 1 100px;
-}
-#submit-message {
-  flex-grow: 0;
-  flex-shrink: 1;
-  max-width: 20%;
-  margin: 15px 0;
 }
 
 /* Footer */
@@ -294,20 +289,24 @@ button:active,
   .profile__portrait {
     margin-bottom: 25px;
   }
+}
+@media all and (max-width: 750px) {
   .project-list {
+    grid-gap: 15px;
     grid-template-columns: 1fr;
   }
+
+  h1 {
+    font-size: 22px;
+  }
 }
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 750px) and (max-width: 1300px) {
   .project-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (max-width: 750px) {
-  #about {
-    height: 100%;
-  }
+@media all and (max-width: 1300px) {
   .profile {
     flex-wrap: wrap;
     justify-content: center;
@@ -315,19 +314,11 @@ button:active,
 
   .profile__portrait {
     margin-right: 0;
+    width: 100%;
+    max-width: 700px;
   }
 
   .profile__text {
     flex: auto;
-    margin-right: 25%;
-    margin-left: 25%;
   }
-
-  .project-list {
-    grid-gap: 15px;
-  }
-  h1 {
-    font-size: 22px;
-  }
-}
 }
