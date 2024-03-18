@@ -104,10 +104,30 @@ button:focus::after,
 }
 button:active,
 .button:active {
+  color:#000;
   border: none;
-  color: #fff;
+  background-color: #fff;
   text-decoration: underline transparent;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+/* Tag styling */
+.tags {
+  margin-bottom: 15px;
+  min-height: 100px;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 3px 10px;
+  background: #808080;
+  color: #ffffff;
+  margin: 5px;
+  transition: 0.4s;
+}
+
+.tag:hover {
+  transform: translate(0, -2px);
 }
 
 /* Header */
@@ -205,7 +225,7 @@ button:active,
 .project-list__item {
   display: inline-block;
   width: 33%;
-  padding: 10px;
+  padding: 15px;
 }
 .project-list__item img{
   width: 100%;
@@ -219,18 +239,28 @@ button:active,
   opacity: 0.9;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
+.project-list__item p {
+  min-height: 100px;
+}
+
+.project-list__item .button {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
 /* end grid fallback */
 @supports (display: grid) {
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 45px;
     margin: 0;
   }
   .project-list__item {
-    background-color: rgba(211, 211, 211, 0.2);
-    border-radius: 10px;
-    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.1);
+    background-color: rgba(168, 152, 152, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
     width: auto;
     min-height: auto;
     margin: 0;
@@ -240,7 +270,7 @@ button:active,
 
 /* Contact Page */
 #contact {
-  height: 100vh;
+  height: 50vh;
   max-width: 80%;
   margin: 10vh auto;
   display: flex;
