@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title> Victor Pena Web Developer Portfolio </title>
     </head>
     <body>
@@ -40,8 +41,20 @@
 <!-- Main content -->
 <main id="about">
     <div class="profile">
-        <img src="img/profilepic.jpg" class="profile__portrait" alt="Victor Pena portrait">
-        <div class="profile__text">
+        <img src="img/profilepic.jpg" data-aos="fade-right" 
+        data-aos-delay="50"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out" 
+        data-aos-once="true"
+        class="profile__portrait" 
+        alt="Victor Pena Portrait">
+        <div 
+        data-aos="fade-left" 
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"  
+        data-aos-once="true"
+        class="profile__text">
             <h1>Full-Stack Web Developer</h1>
             <p>
                 Hi, I’m Victor Pena, an entry level web developer, and a US military veteran 
@@ -63,7 +76,12 @@ business activities, manufacturing, entertainment, or information.
     <h1>Work</h1>
     <div class="project-list">
         <!-- Project items -->
-        <div class="project-list__item">
+        <div 
+        data-aos="fade-up" 
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out" 
+        class="project-list__item">
             <h2>Meet App</h2>
             <a href="https://vicmpg.github.io/meet/" target="_blank"><img src="img/MeetApp_.png"></a>
             <p>
@@ -80,7 +98,12 @@ business activities, manufacturing, entertainment, or information.
             <a href="https://github.com/vicmpg/meet" target="_blank" class="button">Code</a>
             <a href="https://vicmpg.github.io/meet/" target="_blank" class="button">Demo</a>
          </div>
-         <div class="project-list__item">
+         <div 
+         data-aos="fade-up" 
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out" 
+         class="project-list__item">
             <h2>My Flix Angular app </h2>
             <a href="#" target="_blank"><img src="img/project_cover.png"></a>
             <p>
@@ -97,7 +120,12 @@ business activities, manufacturing, entertainment, or information.
             <a href="https://github.com/vicmpg/myFlix-Angular-client" target="_blank" class="button">Code</a>
             <a href="#" target="_blank" class="button">Demo</a>
          </div>
-         <div class="project-list__item">
+         <div 
+         data-aos="fade-up" 
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out" 
+         class="project-list__item">
             <h2>Pokedex Js App</h2>
             <a href="https://vicmpg.github.io/Pokedex-js-app/" target="_blank"><img src="img/PokedexHomeApp.png"></a>
             <p>
@@ -113,7 +141,12 @@ business activities, manufacturing, entertainment, or information.
             <a href="https://github.com/vicmpg/Pokedex-js-app" target="_blank" class="button">Code</a>
             <a href="https://vicmpg.github.io/Pokedex-js-app/" target="_blank" class="button">Demo</a>
          </div>
-         <div class="project-list__item">
+         <div 
+         data-aos="fade-up" 
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out" 
+         class="project-list__item">
             <h2>Chat app</h2>
             <a href="#" target="_blank"><img src="img/ChatAppHomeScreen.png"></a>
             <p>
@@ -129,7 +162,12 @@ business activities, manufacturing, entertainment, or information.
             </div>
             <a href="https://github.com/vicmpg/chat-app" target="_blank" class="button">Code</a>
          </div>
-         <div class="project-list__item">
+         <div 
+         data-aos="fade-up" 
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out" 
+         class="project-list__item">
             <h2>Movie API</h2>
             <a href="#" target="_blank"><img src="img/mongodbscreenshot.png"></a>
             <p>
@@ -140,13 +178,17 @@ business activities, manufacturing, entertainment, or information.
                 <span class="tag">MongoDB</span>
                 <span class="tag">Mongoose</span>
                 <span class="tag">JavaScript</span>
-                <span class="tag">CSS</span>
                 <span class="tag">Express</span>
                 <span class="tag">Postman</span>
             </div>
             <a href="https://github.com/vicmpg/mymovie_api" target="_blank" class="button">Code</a>
          </div>
-         <div class="project-list__item">
+         <div 
+         data-aos="fade-up" 
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out" 
+         class="project-list__item">
             <h2>My Flix React</h2>
             <a href="#" target="_blank"><img src="img/project_cover.png"></a>
             <p>
@@ -166,21 +208,33 @@ business activities, manufacturing, entertainment, or information.
     </div>
 </section>
 <!-- Contact Information -->
-<main id="contact">
-    <div class="contact">
-        <h1>Contact</h1>
+<section id="contact">
+    <div 
+    data-aos="fade-in" 
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out" 
+    class="contact">
         <div class="contact__information">
+            <h1>Contact</h1>
             Victor M. Pena<br>
             Long Island<br>
             New York<br>
             <br>
-            Email <a href="mailto:vicmpg22@gmail.com">vicmpg22@gmail.com</a>
+            Email: <a href="mailto:vicmpg22@gmail.com">vicmpg22@gmail.com</a><br>
+            Linkedin: <a href="https://www.linkedin.com/in/vicmpgdev/" target="_blank"> Victor Pena</a>
         </div>
-        <div>
-            <a href="mailto:vicmpg22@gmail.com" class="button">Contact me</a>
+        <div class="contact__animation">
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon
+                src="https://cdn.lordicon.com/aycieyht.json"
+                trigger="hover"
+                style="width:250px;height:250px">
+                </lord-icon>
+
         </div>
     </div>
-</main>
+</section>
     <!-- Footer with links to social media profiles -->
         <footer class="page-footer">
             <p>Find me on</p>
@@ -193,7 +247,10 @@ business activities, manufacturing, entertainment, or information.
                 <img src="img/353425_linkedin_logo_icon.svg" alt="LinkedIn"></a>
             </div>
             <a href="#top">Back to top</a>
+            <a href="https://lordicon.com/">Icons by Lordicon.com</a>
         </footer>
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #1cde1c;
+  --primary-color: #1da71d;
   --secondary-color: #0047d6;
   --text-color: #0a0c08;
   --font-weight-bold: 700;
@@ -270,7 +270,7 @@ button:active,
 
 /* Contact Page */
 #contact {
-  height: 50vh;
+  height: 60vh;
   max-width: 80%;
   margin: 10vh auto;
   display: flex;
@@ -285,15 +285,33 @@ button:active,
   margin: 0 auto;
   max-width: 80%;
   align-self: center;
+  display: flex;
 }
 
 .contact h1 {
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .contact__information {
-  margin: 30px auto;
-  display: inline-block;
+  margin: 20px 30px;
+  display: block;
+}
+
+.contact__animation {
+  margin: 40px 60px;
+  display: block;
+}
+/* SVG animation */
+svg:hover {
+  animation: shake 0.3s infinite;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 /* Footer */
@@ -328,6 +346,9 @@ button:active,
 
   h1 {
     font-size: 22px;
+  }
+  .contact__animation {
+    display: none;
   }
 }
 @media all and (min-width: 750px) and (max-width: 1300px) {
