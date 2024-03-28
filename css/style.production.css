@@ -14,19 +14,19 @@ body {
 }
 
 h1 {
-  font-family: undefined;
+  font-family: 'Source Sans 3', sans-serif;
   font-size: 30px;
   font-weight: 700;
 }
 
 h2 {
-  font-family: undefined;
+  font-family: 'Source Sans 3', sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
 
 h3 {
-  font-family: undefined;
+  font-family: 'Source Sans 3', sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
@@ -394,6 +394,22 @@ top: 100%;
 }
 /* Media queries */
 @media all and (max-width: 500px) {
+  ul {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+
+  #logo {
+    margin-left: 10px;
+  }
+
+  .page-header {
+    display: block;
+  }
+
+  .page-header__item:last-child {
+    text-align: left;
+  }
   .profile {
     max-width: 320px;
   }

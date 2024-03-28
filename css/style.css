@@ -360,7 +360,6 @@ svg:hover {
     grid-gap: 15px;
     grid-template-columns: 1fr;
   }
-
   h1 {
     font-size: 22px;
   }
@@ -373,19 +372,16 @@ svg:hover {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media all and (max-width: 1300px) {
   .profile {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .profile__portrait {
     margin-right: 0;
     width: 100%;
     max-width: 700px;
   }
-
   .profile__text {
     flex: auto;
   }
