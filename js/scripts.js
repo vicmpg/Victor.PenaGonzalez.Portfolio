@@ -1,3 +1,4 @@
+/* Highlight menu items by section on scroll */
 let sections = document.querySelectorAll('section');
 let menuItems = document.querySelectorAll('.navigation-list__item');
 window.onscroll = () => {
@@ -16,20 +17,20 @@ window.onscroll = () => {
 };
 
 /* Modals */
-const openModals = document.querySelectorAll('.open-modal');
-const closeModal = document.querySelectorAll('.close-modal');
-const modals = document.querySelectorAll('.modal');
+const openModal = document.querySelector('.open-modal');
+const parentElement = openModal.parentElement;
+const parentHeader = parentElement.querySelector('h2');
+const closeModal = document.querySelector('.close-modal');
+const modal = document.querySelector('.modal');
+const modalHeader = modal.querySelector('h2');
 
-// "More" button open dialog + if statement gleich anfang --> welche openModal // oder extra function // extra const?
-openModals.forEach((button, i) => {
-    button.addEventListener('click', () => {
-        modals[i].showModal();
-    });
+
+openModal.addEventListener('click', () => {
+    modal.showModal();
+    console.log(parentHeader);
+    console.log(modalHeader);
 });
 
-// "Close" button closes modal
-closeModal.forEach((button, i) => {
-    button.addEventListener('click', () => {
-        modals[i].close();
-    })
+closeModal.addEventListener('click', () => {
+    modal.close();
 });
