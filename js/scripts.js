@@ -17,20 +17,20 @@ window.onscroll = () => {
 };
 
 /* Modals */
-const openModal = document.querySelector('.open-modal');
-const parentElement = openModal.parentElement;
-const parentHeader = parentElement.querySelector('h2');
-const closeModal = document.querySelector('.close-modal');
-const modal = document.querySelector('.modal');
-const modalHeader = modal.querySelector('h2');
+const openModals = document.querySelectorAll('.open-modal');
+const closeModal = document.querySelectorAll('.close-modal');
+const modals = document.querySelectorAll('.modal');
 
 
-openModal.addEventListener('click', () => {
-    modal.showModal();
-    console.log(parentHeader);
-    console.log(modalHeader);
+openModals.forEach((button, i) => {
+    button.addEventListener('click', () => {
+        modals[i].showModal();
+    });
 });
 
-closeModal.addEventListener('click', () => {
-    modal.close();
+// "Close" button closes modal
+closeModal.forEach((button, i) => {
+    button.addEventListener('click', () => {
+        modals[i].close();
+    })
 });

@@ -192,10 +192,15 @@ button:active,
 }
 .profile__portrait {
   width: 500px;
-  margin-right: 50px;
+  margin: 0 50px;
   padding: 10px;
   border-radius: 15px;
   object-fit: cover;
+}
+.profile__text {
+  flex: 1 1 100px;
+  padding: 15px;
+  margin-right: 50px;
 }
 .profile__text h1 {
   font-size: 50px;
@@ -203,7 +208,7 @@ button:active,
 }
 .profile .button {
   margin-top: 15%;
-  margin-right: 5px;
+  margin-right: 50px;
   float: right;
 }
 
