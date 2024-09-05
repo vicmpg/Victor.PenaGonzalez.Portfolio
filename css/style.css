@@ -514,3 +514,19 @@ svg:hover {
     flex: auto;
   }
 }
+.case-study-image {
+  width: 50%;
+  max-width: 400px; /* This is 50% of the previous max width */
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.case-study-image:hover {
+  transform: scale(1.05);
+}
+
+
